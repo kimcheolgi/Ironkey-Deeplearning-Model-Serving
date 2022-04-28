@@ -1,0 +1,9 @@
+service:
+  image: tensorflow/serving
+  restart: always
+  volumes:
+    - ./saved_model:/models/test_model
+  environment:
+    - MODEL_NAME=test_model
+  ports:
+    - "8501:8501"
