@@ -4,7 +4,7 @@ env:
   APP_S3_BUCKET_NAME: ${{ secrets.s3_bucket_name }}
   APP_NAME : tensorflow-serving
   ENV_NAME: Tensorflowserving-env
-  DEPLOY_PKG_NAME: github-action-dev-deeplol-app_${{ github.sha }}.zip
+  DEPLOY_PKG_NAME: github-action-tensorflow-serving-app_${{ github.sha }}.zip
   AWS_REGION_NAME: ap-northeast-2
 
 on:
